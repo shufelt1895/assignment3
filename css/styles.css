@@ -11,7 +11,9 @@ body {
 body {
     margin: 0;
 }
-
+.logo {
+    height: 7em;
+}
 img {
     display: block;
     margin-left: auto;
@@ -23,6 +25,19 @@ ul.a {
 }
 
 /* Style the header */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: darkgrey;
+}
+header nav{
+    flex: 1;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
 
 .header {
     background-image: url("../images/purp.jpg");
