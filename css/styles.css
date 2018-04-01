@@ -31,55 +31,58 @@ ul.a {
 header {
     display: flex;
     align-items: center;
+
 }
 
 header nav {
     flex: 1;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
 }
 
 header nav ul {
     display: flex;
     justify-content: flex-end;
+    
 }
-
+header nav li:hover {
+    background-color: #ddd;
+    color: black;
+}
 header nav li {
     list-style-type: none;
     padding: 1em;
     color: white
 }
 
+
 main {
     min-height: 30vh;
-    padding: 4vh 0;
     text-align: center;
     display: flex;
     justify-content: space-around;
 }
 
-#main1 {
+.main1 {
     flex: 2;
     background-color: rgba(128, 128, 128, 0.73);
+    margin: 5px;
+    border-radius: 10%;
 }
 
-#main2 {
+.main2 {
     flex: 4;
     background-color: rgba(128, 128, 128, 0.73);
+    margin: 10px;
+    border-radius: 10%;
 }
 
-#main3 {
+.main3 {
 
     flex: 2;
     background-color: rgba(128, 128, 128, 0.73);
-}
-
-.header {
-    background-image: url("../images/purp.jpg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 5px;
-    text-align: center;
-
+    margin: 5px;
+    border-radius: 10%;
 }
 
 footer {
@@ -97,6 +100,16 @@ footer nav li {
     list-style-type: none;
     font-size: .75em;
     padding: 1em;
+}
+
+.header {
+    background-image: url("../images/purp.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+    text-align: center;
+
 }
 
 /* Style the top navigation bar */
@@ -245,7 +258,7 @@ p {
 }
 
 #montage {
-    width: 100%;
+    width: 50%;
 }
 
 #bc {
