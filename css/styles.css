@@ -49,8 +49,27 @@ header nav li {
 }
 
 main {
+    min-height: 30vh;
+    padding: 4vh 0;
+    text-align: center;
     display: flex;
     justify-content: space-around;
+}
+
+#main1 {
+    flex: 2;
+    background-color: rgba(128, 128, 128, 0.73);
+}
+
+#main2 {
+    flex: 4;
+    background-color: rgba(128, 128, 128, 0.73);
+}
+
+#main3 {
+
+    flex: 2;
+    background-color: rgba(128, 128, 128, 0.73);
 }
 
 .header {
@@ -61,6 +80,23 @@ main {
     padding: 5px;
     text-align: center;
 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #555;
+}
+
+footer nav ul {
+    display: flex;
+}
+
+footer nav li {
+    list-style-type: none;
+    font-size: .75em;
+    padding: 1em;
 }
 
 /* Style the top navigation bar */
@@ -125,14 +161,6 @@ main {
     clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width:30rem) {
-    .column {
-        width: 100%;
-    }
-}
-
 h1 {
     color: #0341e6;
     text-align: center;
@@ -141,6 +169,7 @@ h1 {
 h2 {
     text-align: center;
     text-decoration: underline;
+    color: white;
 }
 
 h3 {
@@ -231,4 +260,15 @@ p {
 
 h2a {
     color: black;
+}
+
+@media screen and (max-width: 40rem) {
+    .main1,
+    .main2,
+    .main3,
+    header,
+    main,
+    footer {
+        flex-direction: column;
+    }
 }
